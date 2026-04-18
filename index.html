@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annual Letters</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f7f4ef;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 3rem 3.5rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    a.dl-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.25rem;
+      border: 1px solid #c8bfaf;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #1a1a1a;
+      background: #faf8f5;
+      font-size: 1rem;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    a.dl-btn:hover {
+      background: #f0ece4;
+      border-color: #a89880;
+    }
+
+    .year {
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+
+    .label {
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    .icon {
+      font-size: 1.1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Annual Letters</h1>
+    <p class="subtitle">Click a year to download the PDF.</p>
+    <ul>
+      <li>
+        <a class="dl-btn" href="2021_letter.pdf" download>
+          <div>
+            <span class="year">2021</span>
+            <span class="label"> &mdash; Annual Letter</span>
+          </div>
+          <span class="icon">&#8659; PDF</span>
+        </a>
+      </li>
+      <li>
+        <a class="dl-btn" href="2022_letter.pdf" download>
+          <div>
+            <span class="year">2022</span>
+            <span class="label"> &mdash; Annual Letter</span>
+          </div>
+          <span class="icon">&#8659; PDF</span>
+        </a>
+      </li>
+      <li>
+        <a class="dl-btn" href="2023_letter.pdf" download>
+          <div>
+            <span class="year">2023</span>
+            <span class="label"> &mdash; Annual Letter</span>
+          </div>
+          <span class="icon">&#8659; PDF</span>
+        </a>
+      </li>
+      <li>
+        <a class="dl-btn" href="2024_letter.pdf" download>
+          <div>
+            <span class="year">2024</span>
+            <span class="label"> &mdash; Annual Letter</span>
+          </div>
+          <span class="icon">&#8659; PDF</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
